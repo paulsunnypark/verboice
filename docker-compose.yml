@@ -80,7 +80,8 @@ services:
     ports:
       - 4040
     environment:
-      NGROK_PORT: 'broker:8080'
+      NGROK_PORT: 'web:3000'
+      NGROK_AUTH: YOUR_AUTHTOKEN # Replace with your ngrok authtoken
 
 volumes:
   db:
